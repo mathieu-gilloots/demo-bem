@@ -1,0 +1,85 @@
+//Ne pas prendre en compte le "body" c'est juste pour le style de l'exemple.
+body {
+    padding: 5em;
+}
+
+//that's where it all starts
+
+.cta-box {
+    font-family: lato, arial, sans-serif;
+    font-size: 14px;
+    padding: 20px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    background-color: rgb(244, 251, 251);
+    border-radius: 2px;
+
+    & + & {
+        //cta-box followed by another cta-box
+        margin-top: 2em;
+    }
+
+    &--danger {
+        // class = 'cta-box cta-box--danger'
+        background-color: #f2dede;
+    }
+
+    &__img-box {
+        flex: 1;
+    }
+
+    &__content {
+        flex: 5;
+        color: rgb(78, 78, 78);
+    }
+}
+
+//Another component : a btn bar, to control btns (align, ...)
+.btn-bar {
+    text-align: left;
+
+    &--center {
+        // class = '.btn-bar .btn-bar--center'
+        text-align: center;
+    }
+
+    &--right {
+        // class = '.btn-bar .btn-bar--right'
+        text-align: right;
+    }
+}
+
+//And, the btn are another component, they can be used in anywhere not only on the cta-box
+.btn {
+    // Get bootstrap base button but we can have our own
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #ffffff;
+
+    &--primary {
+        background-color: rgb(71, 184, 179);
+        border-color: rgb(71, 184, 179);
+        font-size: 16px;
+
+        &:hover {
+            color: #fff;
+            background-color: #39938f;
+            border-color: rgba(0, 0, 0, 0);
+        }
+    }
+}

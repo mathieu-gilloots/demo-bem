@@ -1,0 +1,55 @@
+body {
+  padding: 5em; }
+
+.cta-box {
+  font-family: lato, arial, sans-serif;
+  font-size: 14px;
+  padding: 20px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  background-color: #f4fbfb;
+  border-radius: 2px; }
+  .cta-box + .cta-box {
+    margin-top: 2em; }
+  .cta-box--danger {
+    background-color: #f2dede; }
+  .cta-box__img-box {
+    flex: 1; }
+  .cta-box__content {
+    flex: 5;
+    color: #4e4e4e; }
+
+.btn-bar--center {
+  text-align: center; }
+
+.btn-bar--right {
+  text-align: right; }
+
+.btn {
+  /** Get bootstrap base button but we can have our own **/
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #ffffff; }
+  .btn--primary {
+    background-color: #47b8b3;
+    border-color: #47b8b3;
+    font-size: 16px; }
+    .btn--primary:hover {
+      color: #fff;
+      background-color: #39938f;
+      border-color: transparent; }
